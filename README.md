@@ -137,7 +137,7 @@ export default function StateExample() {
 
 ```
 
-### Simple todo example ysing state 
+### Simple todo example using state 
 
 ```js
 import { useState } from "react";
