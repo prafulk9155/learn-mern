@@ -83,7 +83,7 @@ export default function App() {
 ```
 ### 4. Wrinting markup with jsx
 
-variable declare , fnction declare asn calling ...
+variable declare , function declare and calling ...
 ```js
 export default function JSXExample() {
   const name = "XYZ";
@@ -93,6 +93,9 @@ export default function JSXExample() {
   }
   function sum(a, b) {
     return a + b;
+  }
+function calllWithParam(data) {
+    alert(data);
   }
 
   return (
@@ -104,7 +107,32 @@ export default function JSXExample() {
       <p>Sum value : {sum(5, 6)}</p>
       {/* onClick with function name to call function  we dont add () to the function . if we add () to function name it directly called the function*/}
       <button onClick={callAlert}> Show Alert</button>
+    {/* paramaterized function */}
+      <button onClick={() => calllWithParam("this is paramaterized function")}>
+        Call param function
+      </button>
     </>
   );
 }
  ```
+### 5. State in React 
+- `useState` is a React Hook that allows functional components to store and manage state.
+- When the state updater function is called with a new value, React re-renders the component to update the UI accordingly.
+
+---
+
+```js
+import { useState } from "react";
+export default function StateExample() {
+  const [counter, setCounter] = useState(0);
+
+  return (
+    <>
+      <h3>Counter :{counter}</h3>
+      <button onClick={() => setCounter(counter + 1)}>+</button>
+      <button onClick={() => setCounter(counter - 1)}>-</button>
+    </>
+  );
+}
+
+```
