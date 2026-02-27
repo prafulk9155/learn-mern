@@ -8,12 +8,17 @@ export default function App() {
 }
 ```
 ### 2. Make First Component
+create new component
 ```js
 export default function MyFirstComponent(){
     return (
         <h2>This is my first component</h2>
     )
 }
+```
+
+Import component to main app
+```js
 
 import MyFirstComponent from "./MyFirstComponent";
 
