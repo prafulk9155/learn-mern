@@ -1,8 +1,8 @@
-// import MyFirstComponent from "./MyFirstComponent";
+// import MyFirstComponent from "./1_MyFirstComponent";
 // export fedault us directly used while {} use to export only
-// import UserProfile, { ThanksMsg } from "./UserProfile";
+// import UserProfile, { ThanksMsg } from "./2_UserProfile";
 
-import JSXExample from "./JSXExample";
+import JSXExample from "./3_JSXExample";
 
 export default function App() {
   return (
