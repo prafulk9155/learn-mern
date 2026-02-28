@@ -3,8 +3,9 @@
 // import UserProfile, { ThanksMsg } from "./2_UserProfile";
 // import JSXExample from "./3_JSXExample";
 // import StateExample from "./5_StateExample";
+// import TodoExample from "./ToDoExample";
+import IfElseComponent from "./6_If_ElseComponent";
 
-import TodoExample from "./ToDoExample";
 
 export default function App() {
   return (
@@ -15,7 +16,9 @@ export default function App() {
       <ThanksMsg /> */}
       {/* <JSXExample /> */}
       {/* <StateExample /> */}
-      <TodoExample />
+      {/* <TodoExample /> */}
+        <IfElseComponent />
+
     </>
   );
 }
