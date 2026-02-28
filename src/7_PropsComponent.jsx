@@ -16,6 +16,10 @@ export default function PropsComponent(props) {
 
                 })
             }
+
+            {/* click event add in pops component  */}
+            
         </>
     )
+    
 }
