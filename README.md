@@ -282,4 +282,4 @@ export default function PropsComponent(props) {
     )
 }
 ```
-![alt text](/public/intervire_questions/props.png.png)
+![alt text](/public/intervire_questions/props.png)
