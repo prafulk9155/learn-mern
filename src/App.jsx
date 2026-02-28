@@ -5,6 +5,7 @@
 // import StateExample from "./5_StateExample";
 // import TodoExample from "./ToDoExample";
 // import IfElseComponent from "./6_If_ElseComponent";
+import { useState } from "react";
 import PropsComponent from "./7_PropsComponent";
 
 export default function App() {
@@ -24,6 +25,8 @@ export default function App() {
     address: "OPQ Street, City",
   }]
 
+  const [showValue, setShowValue ]= useState()
+
   return (
     <>
       <h1>Main App</h1>
@@ -34,8 +37,11 @@ export default function App() {
       {/* <StateExample /> */}
       {/* <TodoExample /> */}
       {/* <IfElseComponent /> */}
-        <PropsComponent  userdata={userData}/>
+        <PropsComponent  userdata={userData} setValueOnclick={showValue} />
 
+        <button onClick={()=>{setShowValue("this value is passon click event to props")}}>
+          Click to set value in PropsComponent
+        </button>
     </>
   );
 }

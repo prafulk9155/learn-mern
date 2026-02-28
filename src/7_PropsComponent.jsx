@@ -16,9 +16,13 @@ export default function PropsComponent(props) {
 
                 })
             }
+            <hr />
+
+
 
             {/* click event add in pops component  */}
-            
+            { props.setValueOnclick && <h4>{props.setValueOnclick}</h4> }
+
         </>
     )
     

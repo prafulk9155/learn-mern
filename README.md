@@ -229,6 +229,7 @@ export default function IfElseComponent() {
 
 - data passing from parent component 
 ```js
+import { useState } from "react";
 import PropsComponent from "./7_PropsComponent";
 
 export default function App() {
@@ -247,11 +248,16 @@ export default function App() {
     age: 28,
     address: "OPQ Street, City",
   }]
+  const [showValue, setShowValue ]= useState()
 
   return (
     <>
       <h1>Main App</h1>
-        <PropsComponent  userdata={userData}/>
+        <PropsComponent  userdata={userData} setValueOnclick={showValue} />
+
+        <button onClick={()=>{setShowValue("this value is passon click event to props")}}>
+          Click to set value in PropsComponent
+        </button>
 
     </>
   );
@@ -278,8 +284,16 @@ export default function PropsComponent(props) {
 
                 })
             }
+            <hr />
+
+
+
+            {/* click event add in pops component  */}
+            { props.setValueOnclick && <h4>{props.setValueOnclick}</h4> }
+
         </>
     )
+    
 }
 ```
 ![alt text](/public/interview_questions/props.png)
