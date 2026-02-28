@@ -4,10 +4,26 @@
 // import JSXExample from "./3_JSXExample";
 // import StateExample from "./5_StateExample";
 // import TodoExample from "./ToDoExample";
-import IfElseComponent from "./6_If_ElseComponent";
-
+// import IfElseComponent from "./6_If_ElseComponent";
+import PropsComponent from "./7_PropsComponent";
 
 export default function App() {
+  const userData = [{
+    name: "ABC",
+    age: 25,
+    address: "XYZ Street, City",
+  },
+  {
+    name: "PQR",
+    age: 30,
+    address: "LMN Street, City",
+  },
+  {
+    name: "DEF",
+    age: 28,
+    address: "OPQ Street, City",
+  }]
+
   return (
     <>
       <h1>Main App</h1>
@@ -17,7 +33,8 @@ export default function App() {
       {/* <JSXExample /> */}
       {/* <StateExample /> */}
       {/* <TodoExample /> */}
-        <IfElseComponent />
+      {/* <IfElseComponent /> */}
+        <PropsComponent  userdata={userData}/>
 
     </>
   );

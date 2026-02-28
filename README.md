@@ -224,3 +224,61 @@ export default function IfElseComponent() {
     )
 }
 ```
+
+### 7. Props in react 
+
+# data passing from parent component 
+```js
+import PropsComponent from "./7_PropsComponent";
+
+export default function App() {
+  const userData = [{
+    name: "ABC",
+    age: 25,
+    address: "XYZ Street, City",
+  },
+  {
+    name: "PQR",
+    age: 30,
+    address: "LMN Street, City",
+  },
+  {
+    name: "DEF",
+    age: 28,
+    address: "OPQ Street, City",
+  }]
+
+  return (
+    <>
+      <h1>Main App</h1>
+        <PropsComponent  userdata={userData}/>
+
+    </>
+  );
+}
+
+```
+# using to child component 
+```js
+export default function PropsComponent(props) {
+    return (
+        <>
+            <p>Props data</p>
+            {
+                props.userdata.map((item, index) => {
+                    return (
+                        <>
+                            <hr />
+                            <p>Name : {item.name}</p>
+                            <p>Age : {item.age}</p>
+                            <p>Address : {item.address}</p>
+
+                        </>
+                    )
+
+                })
+            }
+        </>
+    )
+}
+```
