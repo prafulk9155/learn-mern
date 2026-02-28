@@ -1,8 +1,10 @@
 // import MyFirstComponent from "./1_MyFirstComponent";
 // export fedault us directly used while {} use to export only
 // import UserProfile, { ThanksMsg } from "./2_UserProfile";
+// import JSXExample from "./3_JSXExample";
+// import StateExample from "./5_StateExample";
 
-import JSXExample from "./3_JSXExample";
+import TodoExample from "./ToDoExample";
 
 export default function App() {
   return (
@@ -11,7 +13,9 @@ export default function App() {
       {/* <MyFirstComponent /> */}
       {/* <UserProfile />
       <ThanksMsg /> */}
-      <JSXExample />
+      {/* <JSXExample /> */}
+      {/* <StateExample /> */}
+      <TodoExample />
     </>
   );
 }
