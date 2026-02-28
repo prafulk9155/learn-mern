@@ -227,7 +227,7 @@ export default function IfElseComponent() {
 
 ### 7. Props in react 
 
-# data passing from parent component 
+- data passing from parent component 
 ```js
 import PropsComponent from "./7_PropsComponent";
 
@@ -258,7 +258,7 @@ export default function App() {
 }
 
 ```
-# using to child component 
+- using to child component 
 ```js
 export default function PropsComponent(props) {
     return (
