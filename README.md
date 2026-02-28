@@ -185,7 +185,7 @@ export default function TodoExample() {
 ```
 
 ### 6. If else in React
-````js
+```js
 
 import { useState } from "react";
 
